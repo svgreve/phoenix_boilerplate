@@ -1,0 +1,8 @@
+  <ul>
+    <%= if @current_locale != "en" do %>
+      <li> <%= link "English", to: "/?locale=en" %> </li>
+    <% end %>
+    <%= if @current_locale != "pt_BR" do %>
+      <li><%=  link "Português", to: "/?locale=pt_BR" %> </li>
+    <% end %>
+  </ul>
