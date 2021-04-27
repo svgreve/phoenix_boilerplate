@@ -70,7 +70,11 @@ defmodule HelloWorld.MixProject do
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
       {:bamboo, "~> 2.1"},
-      {:bamboo_phoenix, "~> 1.0.0"}
+      {:bamboo_phoenix, "~> 1.0.0"},
+      {:premailex, "~> 0.3.0"},
+      # Optional, but recommended for SSL validation with :httpc
+      {:certifi, "~> 2.4"},
+      {:ssl_verify_fun, "~> 1.1"}
     ]
   end
 

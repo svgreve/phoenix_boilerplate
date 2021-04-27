@@ -1,8 +1,8 @@
 defmodule HelloWorld.Accounts.Email do
   @moduledoc false
   import Bamboo.Email
+  use Bamboo.Phoenix, view: HelloWorldWeb.EmailView
 
-  alias HelloWorld.Accounts.User
 
   def welcome_email(email) do
     new_email(
@@ -25,18 +25,18 @@ defmodule HelloWorld.Accounts.Email do
   end
 
   def registration_email_confirmation(email, url) do
-    html_body =
-      "<h1>Hi #{email},</h1>" <>
-        "<p>You can confirm your account by visiting the URL below:<p>" <>
-        "<p>#{url}</p>" <>
-        "<p>If you didn't create an account with us, please ignore this.</p>"
+    base_email()
+    |> to(email)
+    |> subject("Welcome to Docvs.net")
+    |> assign(:email, email)
+    |> assign(:url, url)
+    |> render("registration_email_confirmation.html")
+  end
 
-    new_email(
-      to: email,
-      from: "sender@email.docvs.net",
-      subject: "Welcome to the app.",
-      html_body: html_body,
-      text_body: "Thanks for joining!"
-    )
+  defp base_email do
+    new_email()
+    |> from("Docvs Accounts<accounts@mail.docvs.net>")
+    |> put_header("Reply-To", "postmaster@mail.docvs.net")
+    |> put_html_layout({HelloWorldWeb.LayoutView, "email.html"})
   end
 end
