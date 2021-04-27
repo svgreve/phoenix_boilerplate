@@ -174,11 +174,6 @@ msgid "User confirmed successfully."
 msgstr "Usuário confirmado com sucesso."
 
 #, elixir-format
-#: lib/hello_world_web/controllers/user_registration_controller.ex:25
-msgid "User created successfully."
-msgstr "Usuário criado com sucesso."
-
-#, elixir-format
 #: lib/hello_world_web/controllers/user_confirmation_controller.ex:25
 msgid "you will receive an email with instructions shortly."
 msgstr "você receberá um e-mail com instruções em breve."
@@ -264,3 +259,8 @@ msgstr "não corresponde à senha"
 #: lib/hello_world/accounts/user.ex:141
 msgid "is not valid"
 msgstr "não é válido"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_registration_controller.ex:25
+msgid "Account created successfully. Your will receive an email to confirm your account."
+msgstr "Conta criada com sucesso. Você receberá um e-mail para confirmar sua nova  conta."

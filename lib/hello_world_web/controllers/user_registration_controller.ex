@@ -22,7 +22,7 @@ defmodule HelloWorldWeb.UserRegistrationController do
           )
 
         conn
-        |> put_flash(:info, gettext("User created successfully."))
+        |> put_flash(:info, gettext("Account created successfully. Your will receive an email to confirm your account."))
         |> UserAuth.log_in_user(user)
 
       {:error, %Ecto.Changeset{} = changeset} ->
