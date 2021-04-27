@@ -1,5 +1,5 @@
 <h2>Hi <%= @email%>,</h2>
 
 <p>You can confirm your account by visiting the URL below:<p>
-<p> <%= link "Confirm your email account", to: @url %></p>
+<p class="center"> <%= link("Confirm your email account", to: @url, class: "btn") %></p>
 <p>If you didn't create an account with us, please ignore this.</p>

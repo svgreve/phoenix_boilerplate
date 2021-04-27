@@ -3,7 +3,6 @@ defmodule HelloWorld.Accounts.Email do
   import Bamboo.Email
   use Bamboo.Phoenix, view: HelloWorldWeb.EmailView
 
-
   def welcome_email(email) do
     new_email(
       to: email,
@@ -31,6 +30,7 @@ defmodule HelloWorld.Accounts.Email do
     |> assign(:email, email)
     |> assign(:url, url)
     |> render("registration_email_confirmation.html")
+    |> premail()
   end
 
   defp base_email do
@@ -38,5 +38,15 @@ defmodule HelloWorld.Accounts.Email do
     |> from("Docvs Accounts<accounts@mail.docvs.net>")
     |> put_header("Reply-To", "postmaster@mail.docvs.net")
     |> put_html_layout({HelloWorldWeb.LayoutView, "email.html"})
+    |> put_text_layout(false)
+  end
+
+  defp premail(email) do
+    html = Premailex.to_inline_css(email.html_body)
+    text = Premailex.to_text(email.html_body)
+
+    email
+    |> html_body(html)
+    |> text_body(text)
   end
 end
