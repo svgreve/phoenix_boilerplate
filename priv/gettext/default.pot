@@ -11,13 +11,13 @@ msgid ""
 msgstr ""
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/email.html.eex:52
+#: lib/hello_world_web/templates/layout/email.html.eex:51
 #: lib/hello_world_web/templates/page/index.html.eex:2
 msgid "Welcome to %{name}!"
 msgstr ""
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/email.html.eex:53
+#: lib/hello_world_web/templates/layout/email.html.eex:52
 #: lib/hello_world_web/templates/page/index.html.eex:3
 msgid "Peace of mind from prototype to production"
 msgstr ""
@@ -200,6 +200,7 @@ msgid "must have the @ sign and no spaces"
 msgstr ""
 
 #, elixir-format
+#: lib/hello_world/accounts/email.ex:30
 #: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:3
 msgid "Confirm your account"
 msgstr ""

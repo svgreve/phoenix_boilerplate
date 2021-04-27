@@ -23,21 +23,7 @@ defmodule HelloWorld.Accounts.UserNotifier do
   def deliver_confirmation_instructions(user, url) do
     Email.registration_email_confirmation(user.email, url)
     |> Mailer.deliver_later!()
-
-    deliver(user.email, """
-
-    ==============================
-
-    Hi #{user.email},
-
-    You can confirm your account by visiting the URL below:
-
-    #{url}
-
-    If you didn't create an account with us, please ignore this.
-
-    ==============================
-    """)
+    {:ok, %{to: user.email}}
   end
 
   @doc """
