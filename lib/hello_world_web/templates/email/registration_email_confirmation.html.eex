@@ -1,5 +1,4 @@
-<h2>Hi <%= @email%>,</h2>
-<p>You can confirm your account by visiting the URL below:
-  <p>
-    <p> <%= link("Confirm your email account", to: @url, method: :get, class: "button") %></p>
-    <p>If you didn't create an account with us, please ignore this.</p>
+<h4><%= gettext("Hi, %{email}", email: @email) %></h4>
+<p><%= gettext("You can confirm your account by clicking on the button below:")%></p>
+<p><%= link(gettext("Confirm your account"), to: @url, method: :get, class: "button") %></p>
+<p><%= gettext("If you didn't create an account with us, please ignore this.") %></p>
