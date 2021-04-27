@@ -34,6 +34,27 @@ defmodule HelloWorld.Accounts.Email do
     |> premail()
   end
 
+  def reset_password_instructions(email, url) do
+    base_email()
+    |> to(email)
+    |> subject(gettext("Reset your password"))
+    |> assign(:email, email)
+    |> assign(:url, url)
+    |> render("reset_password_instructions.html")
+    |> premail()
+  end
+
+  def update_email_instructions(email, url) do
+    base_email()
+    |> to(email)
+    |> subject(gettext("Confirm your new email"))
+    |> assign(:email, email)
+    |> assign(:url, url)
+    |> render("update_email_instructions.html")
+    |> premail()
+  end
+
+
   defp base_email do
     new_email()
     |> from({"Docvs Accounts", "accounts@mail.docvs.net"})

@@ -84,7 +84,7 @@ defmodule HelloWorld.Accounts.User do
     |> validate_email()
     |> case do
       %{changes: %{email: _}} = changeset -> changeset
-      %{} = changeset -> add_error(changeset, :email, "did not change")
+      %{} = changeset -> add_error(changeset, :email, gettext("did not change"))
     end
   end
 
@@ -103,7 +103,7 @@ defmodule HelloWorld.Accounts.User do
   def password_changeset(user, attrs, opts \\ []) do
     user
     |> cast(attrs, [:password])
-    |> validate_confirmation(:password, message: "does not match password")
+    |> validate_confirmation(:password, message: gettext("does not match password"))
     |> validate_password(opts)
   end
 
@@ -138,7 +138,7 @@ defmodule HelloWorld.Accounts.User do
     if valid_password?(changeset.data, password) do
       changeset
     else
-      add_error(changeset, :current_password, "is not valid")
+      add_error(changeset, :current_password, gettext("is not valid"))
     end
   end
 end

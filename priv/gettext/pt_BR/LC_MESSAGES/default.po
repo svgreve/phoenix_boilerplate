@@ -97,12 +97,12 @@ msgstr "Esqueceu sua senha?"
 #, elixir-format
 #: lib/hello_world_web/controllers/user_confirmation_controller.ex:24
 msgid "If your email is in our system and it has not been confirmed yet, "
-msgstr ""
+msgstr "Se o seu e-mail está em nosso sistema e ainda não foi confirmado,"
 
 #, elixir-format
 #: lib/hello_world_web/controllers/user_reset_password_controller.ex:26
 msgid "If your email is in our system, you will receive instructions to reset your password shortly."
-msgstr "Se o seu e-mail está em nosso sistema e ainda não foi confirmado,"
+msgstr "Se seu e-mail estiver em nosso sistema, você receberá instruções para redefinir sua senha em breve."
 
 #, elixir-format
 #: lib/hello_world_web/controllers/user_session_controller.ex:19
@@ -135,7 +135,7 @@ msgstr "Ops, algo deu errado! Verifique os erros abaixo."
 #, elixir-format
 #: lib/hello_world_web/controllers/user_reset_password_controller.ex:43
 msgid "Password reset successfully."
-msgstr ""
+msgstr "Senha redefinida com sucesso."
 
 #, elixir-format
 #: lib/hello_world_web/controllers/user_settings_controller.ex:46
@@ -207,7 +207,8 @@ msgid "Confirm your account"
 msgstr "Confirme sua conta"
 
 #, elixir-format
-#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:1
+#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:1 lib/hello_world_web/templates/email/reset_password_instructions.html.eex:1
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:1
 msgid "Hi, %{email}"
 msgstr "Olá, %{email}"
 
@@ -220,3 +221,46 @@ msgstr "Se você não criou uma conta conosco, ignore."
 #: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:2
 msgid "You can confirm your account by clicking on the button below:"
 msgstr "Para confirmar sua conta clique no botão abaixo:"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:4
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:4
+msgid "If you didn't request this change, please ignore this."
+msgstr "Se você não solicitou essa alteração, ignore."
+
+#, elixir-format
+#: lib/hello_world/accounts/email.ex:40
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:3
+msgid "Reset your password"
+msgstr "Redefinir senha"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:2
+msgid "You can reset your password by clicking the button below"
+msgstr "Você pode redefinir sua senha clicando no botão abaixo"
+
+#, elixir-format
+#: lib/hello_world/accounts/email.ex:50
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:3
+msgid "Confirm your new email"
+msgstr "Confirme seu novo e-mail"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:2
+msgid "You can change your email by clicking the button below:"
+msgstr "Você pode alterar seu e-mail clicando no botão abaixo:"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:87
+msgid "did not change"
+msgstr "não mudou"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:106
+msgid "does not match password"
+msgstr "não corresponde à senha"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:141
+msgid "is not valid"
+msgstr "não é válido"

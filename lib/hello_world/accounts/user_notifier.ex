@@ -1,21 +1,14 @@
 defmodule HelloWorld.Accounts.UserNotifier do
   @moduledoc false
 
-  # For simplicity, this module simply logs messages to the terminal.
-  # You should replace it by a proper email or notification tool, such as:
-  #
-  #   * Swoosh - https://hexdocs.pm/swoosh
-  #   * Bamboo - https://hexdocs.pm/bamboo
-  #
-
   alias HelloWorld.Accounts.Email
   alias HelloWorld.Mailer
 
-  defp deliver(to, body) do
-    require Logger
-    Logger.debug(body)
-    {:ok, %{to: to, body: body}}
-  end
+  # defp deliver(to, body) do
+  #   require Logger
+  #   Logger.debug(body)
+  #   {:ok, %{to: to, body: body}}
+  # end
 
   @doc """
   Deliver instructions to confirm account.
@@ -23,6 +16,7 @@ defmodule HelloWorld.Accounts.UserNotifier do
   def deliver_confirmation_instructions(user, url) do
     Email.registration_email_confirmation(user.email, url)
     |> Mailer.deliver_later!()
+
     {:ok, %{to: user.email}}
   end
 
@@ -30,39 +24,19 @@ defmodule HelloWorld.Accounts.UserNotifier do
   Deliver instructions to reset a user password.
   """
   def deliver_reset_password_instructions(user, url) do
-    deliver(user.email, """
+    Email.reset_password_instructions(user.email, url)
+    |> Mailer.deliver_later!()
 
-    ==============================
-
-    Hi #{user.email},
-
-    You can reset your password by visiting the URL below:
-
-    #{url}
-
-    If you didn't request this change, please ignore this.
-
-    ==============================
-    """)
+    {:ok, %{to: user.email}}
   end
 
   @doc """
   Deliver instructions to update a user email.
   """
   def deliver_update_email_instructions(user, url) do
-    deliver(user.email, """
+    Email.update_email_instructions(user.email, url)
+    |> Mailer.deliver_later!()
 
-    ==============================
-
-    Hi #{user.email},
-
-    You can change your email by visiting the URL below:
-
-    #{url}
-
-    If you didn't request this change, please ignore this.
-
-    ==============================
-    """)
+    {:ok, %{to: user.email}}
   end
 end
