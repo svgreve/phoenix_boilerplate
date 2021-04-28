@@ -75,6 +75,6 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
-# config :hello_world, HelloWorld.Mailer, adapter: Bamboo.LocalAdapter
+config :hello_world, HelloWorld.Mailer, adapter: Bamboo.LocalAdapter
 
-import_config "dev.secret.exs"
+# import_config "dev.secret.exs"

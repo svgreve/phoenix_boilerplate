@@ -52,7 +52,8 @@ pre{padding: 1em;}
       <p><%= gettext "Peace of mind from prototype to production" %></p>
     </section>
    <section class="container">
-    <%= render @view_module, @view_template, assigns %>
+    <%# <%= render @view_module, @view_template, assigns %>
+    <%= @inner_content %>
   </section>
   </body>
 </html>
