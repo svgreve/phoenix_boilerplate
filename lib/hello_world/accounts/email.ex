@@ -54,7 +54,6 @@ defmodule HelloWorld.Accounts.Email do
     |> premail()
   end
 
-
   defp base_email do
     new_email()
     |> from({"Docvs Accounts", "accounts@mail.docvs.net"})
