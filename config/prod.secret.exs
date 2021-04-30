@@ -40,22 +40,22 @@ config :hello_world, HelloWorldWeb.Endpoint,
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
 
-mailgun_api_key =
-  System.get_env("MAILGUN_API_KEY") ||
-    raise """
-    environment variable MAILGUN_API_KEY is missing.
-    """
+# mailgun_api_key =
+#   System.get_env("MAILGUN_API_KEY") ||
+#     raise """
+#     environment variable MAILGUN_API_KEY is missing.
+#     """
 
-mailgun_domain =
-  System.get_env("MAILGUN_DOMAIN") ||
-    raise """
-    environment variable MAILGUN_DOMAIN is missing.
-    """
+# mailgun_domain =
+#   System.get_env("MAILGUN_DOMAIN") ||
+#     raise """
+#     environment variable MAILGUN_DOMAIN is missing.
+#     """
 
 config :hello_world, HelloWorld.Mailer,
   adapter: Bamboo.MailgunAdapter,
-  api_key: mailgun_api_key,
-  domain: mailgun_domain,
+  api_key: System.get_env("MAILGUN_API_KEY"),
+  domain: System.get_env("MAILGUN_DOMAIN"),
   hackney_opts: [
     recv_timeout: :timer.minutes(1)
   ]

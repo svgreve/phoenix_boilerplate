@@ -261,5 +261,5 @@ msgstr ""
 
 #, elixir-format
 #: lib/hello_world_web/controllers/user_registration_controller.ex:25
-msgid "Account created successfully. Your will receive an email to confirm your account."
+msgid "Account created successfully. You will receive an email to confirm your account."
 msgstr ""
