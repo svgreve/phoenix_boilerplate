@@ -1,6 +1,6 @@
 # HelloWorld
 
-[![codecov](https://codecov.io/gh/svgreve/phoenix_boilerplate/branch/main/graph/badge.svg)](https://codecov.io/gh/svgreve/phoenix_boilerplate)
+[![codecov](https://codecov.io/gh/svgreve/phoenix_boilerplate/branch/main/graph/badge.svg?token=R0RNKX31D3)](https://codecov.io/gh/svgreve/phoenix_boilerplate)
 
 # Motivação
 
