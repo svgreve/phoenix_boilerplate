@@ -2,6 +2,11 @@
 
 [![codecov](https://codecov.io/gh/svgreve/phoenix_boilerplate/branch/main/graph/badge.svg?token=R0RNKX31D3)](https://codecov.io/gh/svgreve/phoenix_boilerplate)
 
+# Demo
+
+[Deployed on Gigalixir](https://witty-advanced-amphibian.gigalixirapp.com/)
+
+
 # Motivação
 
 Consolidar os conhecimentos obtidos com a trilha estudos Rocketseat Ignite Elixir e os decorrentes da leitura dos livros Elixir in Action e Programming Phoenix >= 1.6.
