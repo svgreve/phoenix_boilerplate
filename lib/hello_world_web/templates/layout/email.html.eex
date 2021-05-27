@@ -76,10 +76,10 @@ pre{padding: 1em;}
         </style>
         <![endif]-->
   <!--[if !mso]><!-->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <%# <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
   <style type="text/css">
     @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
-  </style>
+  </style> %>
   <!--<![endif]-->
   <style type="text/css">
     @media only screen and (min-width:480px) {
@@ -148,12 +148,12 @@ pre{padding: 1em;}
                                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
                                         <tr>
                                           <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                            <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:40px;line-height:1;text-align:left;color:white;"><%= gettext "Welcome to %{name}!", name: "HelloWorld" %></div>
+                                            <div style="font-family:Helvetica, Arial, sans-serif;font-size:40px;line-height:1;text-align:left;color:white;"><%= gettext "Welcome to %{name}!", name: "HelloWorld" %></div>
                                           </td>
                                         </tr>
                                         <tr>
                                           <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                            <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:white;"><%= gettext "Peace of mind from prototype to production" %></div>
+                                            <div style="font-family:Helvetica, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:white;"><%= gettext "Peace of mind from prototype to production" %></div>
                                           </td>
                                         </tr>
                                       </table>
@@ -184,7 +184,7 @@ pre{padding: 1em;}
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:12px;line-height:1;text-align:left;color:grey;">Eikon Tecnologia Ltda. - 01234-001 - Av. Pacaembu 1777 - São Paulo SP - Brasil</div>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:1;text-align:left;color:grey;">Eikon Tecnologia Ltda. - 01234-001 - Av. Pacaembu 1777 - São Paulo SP - Brasil</div>
                     </td>
                   </tr>
                 </table>
