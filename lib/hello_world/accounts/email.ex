@@ -56,7 +56,7 @@ defmodule HelloWorld.Accounts.Email do
 
   defp base_email do
     new_email()
-    |> from({"Docvs Accounts", "accounts@mail.docvs.net"})
+    |> from({"HelloWorld Accounts", "accounts@mail.docvs.net"})
     |> put_header("Reply-To", "postmaster@mail.docvs.net")
     |> put_html_layout({HelloWorldWeb.LayoutView, "email.html"})
     |> put_text_layout(false)
