@@ -1,0 +1,7 @@
+<h1><%= gettext "Signed-in home page"%></h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Ut leo mi, ultricies id egestas at, dapibus dapibus nulla.
+Nulla ut sodales libero.
+Aliquam sagittis neque magna, vitae euismod magna fermentum.
+</p>

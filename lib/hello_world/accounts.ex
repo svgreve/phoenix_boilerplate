@@ -40,8 +40,11 @@ defmodule HelloWorld.Accounts do
   def get_user_by_email_and_password(email, password)
       when is_binary(email) and is_binary(password) do
     user = Repo.get_by(User, email: email)
-    if User.valid_password?(user, password), do: user
+    if User.valid_password?(user, password), do: is_confirmed?(user)
   end
+
+  defp is_confirmed?(user) when is_nil(user.confirmed_at), do: nil
+  defp is_confirmed?(user), do: user
 
   @doc """
   Gets a single user.
@@ -347,7 +350,7 @@ defmodule HelloWorld.Accounts do
     end
   end
 
-  def query_accounts_not_confirmed_in_two_hours() do
+  def query_accounts_not_confirmed_in_two_hours do
     now_less_two_hours = NaiveDateTime.add(NaiveDateTime.utc_now(), -7_200)
     from u in User, where: is_nil(u.confirmed_at) and u.inserted_at <= ^now_less_two_hours
   end

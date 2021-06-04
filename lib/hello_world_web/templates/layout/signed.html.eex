@@ -14,8 +14,8 @@
         <nav role="navigation">
           <%= render "_user_menu.html", assigns %>
         </nav>
-        <a href="/" class="phx-logo">
-          <p>Internal layout for signed user</p>
+        <a href="/home" class="phx-logo">
+          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
         </a>
       </section>
     </header>

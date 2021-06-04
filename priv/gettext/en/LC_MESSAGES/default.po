@@ -105,17 +105,12 @@ msgid "If your email is in our system, you will receive instructions to reset yo
 msgstr ""
 
 #, elixir-format
-#: lib/hello_world_web/controllers/user_session_controller.ex:19
-msgid "Invalid email or password"
-msgstr ""
-
-#, elixir-format
 #: lib/hello_world_web/templates/user_session/new.html.eex:16
 msgid "Keep me logged in for 60 days"
 msgstr ""
 
 #, elixir-format
-#: lib/hello_world_web/controllers/user_session_controller.ex:25
+#: lib/hello_world_web/controllers/user_session_controller.ex:27
 msgid "Logged out successfully."
 msgstr ""
 
@@ -268,4 +263,14 @@ msgstr ""
 #, elixir-format
 #: lib/hello_world_web/templates/layout/email.html.eex:187
 msgid "Company name - Company address"
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_session_controller.ex:20
+msgid "Invalid email or password or account not confirmed"
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/home/index.html.eex:1
+msgid "Signed-in home page"
 msgstr ""
