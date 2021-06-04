@@ -2,44 +2,46 @@
 
 [![codecov](https://codecov.io/gh/svgreve/phoenix_boilerplate/branch/main/graph/badge.svg?token=R0RNKX31D3)](https://codecov.io/gh/svgreve/phoenix_boilerplate)
 
-# Demo
+[README em Português do Brasil](/README_PT_BR.md)
+
+##  Demo
 
 [Deployed on Gigalixir](https://witty-advanced-amphibian.gigalixirapp.com/)
 
+## Motivation
 
-# Motivação
+Consolidate the knowledge obtained from the [Rocketseat](https://rocketseat.com.br/) Ignite Elixir study trail and from reading the books Elixir in Action and Programming Phoenix >= 1.4.
 
-Consolidar os conhecimentos obtidos com a trilha estudos Rocketseat Ignite Elixir e os decorrentes da leitura dos livros Elixir in Action e Programming Phoenix >= 1.6.
+The boilerplate includes the basic functionality for any web application to be developed with Elixir / Phoenix. To know:
 
-O boilerplate inclui as funcionalidades básicas para qualquer aplicação web a ser desenvolvida com Elixir / Phoenix. A saber:
+- CI / CD using Github Actions and deployment using Gigalixir.
+- User account management according to good security practices. Accounts not confirmed within two hours will be automatically deleted through a process running at the beginning of each hour.
+- Internationalization, with initial support for English and Brazilian Portuguese and the possibility of easy addition of other languages.
+- Supports sending CSS formatted emails through the Mailgun service, with the possibility of switching to another email sending provider.
+- Data persistence using PostgreSQL, with the possibility of switching to use MySQL or MS SQL.
 
-- CI / CD utilizando Github Actions e deployment usando Gigalixir.
-- Gestão de contas de usuário segundo boas práticas de segurança.
-- Internacionalização, com suporte inicial a inglês e português do Brasil e possibilidade de fácil adição de outros idiomas.
-- Suporte a envio de e-mails formatados através de CSS, através do serviço Mailgun, com fácil troca para outro provedor de envio de emails.
-- Persistência de dados usando PostgreSQL, com possibilidade de troca para uso de MySQL ou MS SQL.
+> This boilerplate was inspired by the [elixir_boilerplate developed by Mirego]((https://github.com/mirego/elixir-boilerplate)).
 
-O boilerplate foi inspirado no [elixir_boilerplate desenvolvido pela Mirego](https://github.com/mirego/elixir-boilerplate).
+## How to use
 
-# Como usar
+1. Clone the project (git clone https://github.com/svgreve/phoenix_boilerplate)
+2. Delete internal Git repository ( rm -rf .git )
+3. Run boilerplate setup script ( ./boilerplate-setup.sh YourProjectName)
+4. Create a new Git repository ( git init )
+5. Create the first commit ( git commit -a -m "Initial commit" )
 
-1. Clonar o projeto (git clone https://github.com/svgreve/phoenix_boilerplate)
-2. Deletar o repositório Git interno ( rm -rf .git )
-3. Executar o script de setup do boilerplate ( ./boilerplate-setup.sh YourProjectName)
-4. Criar um novo repositório Git ( git init )
-5. Criar o primeiro commit ( git commit -a -m "Initial commit" )
 
-# Internacionalização
+## Internationalization
+Whenever you add a new string to the web application, use English and the gettext function. Example: 
 
-1. Sempre que adicionar uma nova string na aplicação, usar inglês e a função gettext. Exemplo:
-			```msg = gettext("This is a new message")```
-			
-2. Antes de fazer um commit executar o comando no terminal, para preparar os arquivos para as novas traduções:
+```msg = gettext("This is a new message")```
 
-		mix gettext.extract --merge
-		
-3. Incluir as traduções nos arquivos recém-atualizados na pasta ``priv/getext``
-4. Para adicionar um novo idioma (p.ex. espanhol), rodar o comando:
+Before making a commit, execute the command in the terminal, to prepare the files for the new translations:
 
-	```mix gettext.merge priv/gettext --locale es```
+ ```mix gettext.extract --merge```
 
+Include translations in newly updated files in ```priv/getext``` folder
+
+To add a new language (eg Spanish), run the command:
+
+```mix gettext.merge priv/gettext --locale es```
