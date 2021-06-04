@@ -18,12 +18,14 @@ defmodule HelloWorldWeb.UserSessionControllerTest do
 
     test "redirects if already logged in", %{conn: conn, user: user} do
       conn = conn |> log_in_user(user) |> get(Routes.user_session_path(conn, :new))
-      assert redirected_to(conn) == "/"
+      assert redirected_to(conn) == "/home"
     end
   end
 
   describe "POST /users/log_in" do
     test "logs the user in", %{conn: conn, user: user} do
+      confirm_account(user)
+
       conn =
         post(conn, Routes.user_session_path(conn, :create), %{
           "user" => %{"email" => user.email, "password" => valid_user_password()}
@@ -40,6 +42,7 @@ defmodule HelloWorldWeb.UserSessionControllerTest do
     end
 
     test "logs the user in with remember me", %{conn: conn, user: user} do
+      confirm_account(user)
       conn =
         post(conn, Routes.user_session_path(conn, :create), %{
           "user" => %{
@@ -54,6 +57,7 @@ defmodule HelloWorldWeb.UserSessionControllerTest do
     end
 
     test "logs the user in with return to", %{conn: conn, user: user} do
+      confirm_account(user)
       conn =
         conn
         |> init_test_session(user_return_to: "/foo/bar")

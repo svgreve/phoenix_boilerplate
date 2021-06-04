@@ -79,6 +79,8 @@ defmodule HelloWorldWeb.UserResetPasswordControllerTest do
     end
 
     test "resets password once", %{conn: conn, user: user, token: token} do
+      confirm_account(user)
+
       conn =
         put(conn, Routes.user_reset_password_path(conn, :update, token), %{
           "user" => %{

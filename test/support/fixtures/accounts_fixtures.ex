@@ -4,6 +4,10 @@ defmodule HelloWorld.AccountsFixtures do
   entities via the `HelloWorld.Accounts` context.
   """
 
+  import Ecto.Changeset
+  alias HelloWorld.Accounts.User
+  alias HelloWorld.Repo
+
   def unique_user_email, do: "user#{System.unique_integer()}@example.com"
   def valid_user_password, do: "banana123456789012"
 
@@ -20,6 +24,12 @@ defmodule HelloWorld.AccountsFixtures do
       |> valid_user_attributes()
       |> HelloWorld.Accounts.register_user()
 
+    user
+  end
+
+  def confirm_account(user) do
+    changeset = User.confirm_changeset(user)
+    {:ok, user} = Repo.update(changeset)
     user
   end
 

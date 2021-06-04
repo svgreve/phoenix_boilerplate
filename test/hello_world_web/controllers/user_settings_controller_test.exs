@@ -23,6 +23,8 @@ defmodule HelloWorldWeb.UserSettingsControllerTest do
 
   describe "PUT /users/settings (change password form)" do
     test "updates the user password and resets tokens", %{conn: conn, user: user} do
+      confirm_account(user)
+
       new_password_conn =
         put(conn, Routes.user_settings_path(conn, :update), %{
           "action" => "update_password",

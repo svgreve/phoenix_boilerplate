@@ -28,6 +28,7 @@ defmodule HelloWorld.AccountsTest do
 
     test "returns the user if the email and password are valid" do
       %{id: id} = user = user_fixture()
+      confirm_account(user)
 
       assert %User{id: ^id} =
                Accounts.get_user_by_email_and_password(user.email, valid_user_password())
@@ -288,6 +289,8 @@ defmodule HelloWorld.AccountsTest do
     end
 
     test "updates the password", %{user: user} do
+      confirm_account(user)
+
       {:ok, user} =
         Accounts.update_user_password(user, valid_user_password(), %{
           password: "new valid password"
@@ -487,6 +490,7 @@ defmodule HelloWorld.AccountsTest do
     end
 
     test "updates the password", %{user: user} do
+      confirm_account(user)
       {:ok, updated_user} = Accounts.reset_user_password(user, %{password: "new valid password"})
       assert is_nil(updated_user.password)
       assert Accounts.get_user_by_email_and_password(user.email, "new valid password")
