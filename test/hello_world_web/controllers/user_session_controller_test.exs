@@ -43,6 +43,7 @@ defmodule HelloWorldWeb.UserSessionControllerTest do
 
     test "logs the user in with remember me", %{conn: conn, user: user} do
       confirm_account(user)
+
       conn =
         post(conn, Routes.user_session_path(conn, :create), %{
           "user" => %{
@@ -58,6 +59,7 @@ defmodule HelloWorldWeb.UserSessionControllerTest do
 
     test "logs the user in with return to", %{conn: conn, user: user} do
       confirm_account(user)
+
       conn =
         conn
         |> init_test_session(user_return_to: "/foo/bar")
