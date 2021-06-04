@@ -74,7 +74,8 @@ defmodule HelloWorld.MixProject do
       {:premailex, "~> 0.3.0"},
       # Optional, but recommended for SSL validation with :httpc
       {:certifi, "~> 2.4"},
-      {:ssl_verify_fun, "~> 1.1"}
+      {:ssl_verify_fun, "~> 1.1"},
+      {:oban, "~> 2.7"}
     ]
   end
 

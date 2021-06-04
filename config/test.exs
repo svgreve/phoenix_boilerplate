@@ -25,3 +25,5 @@ config :hello_world, HelloWorldWeb.Endpoint,
 config :logger, level: :warn
 
 config :hello_world, HelloWorld.Mailer, adapter: Bamboo.TestAdapter
+
+config :hello_world, Oban, queues: false, plugins: false

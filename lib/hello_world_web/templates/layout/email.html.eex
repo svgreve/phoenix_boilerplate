@@ -148,7 +148,7 @@ pre{padding: 1em;}
                                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;">
                                         <tr>
                                           <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                            <div style="font-family:Helvetica, Arial, sans-serif;font-size:40px;line-height:1;text-align:left;color:white;"><%= gettext "Welcome to %{name}!", name: "HelloWorld" %></div>
+                                            <div style="font-family:Helvetica, Arial, sans-serif;font-size:40px;line-height:1;text-align:left;color:white;">HelloWorld</div>
                                           </td>
                                         </tr>
                                         <tr>
@@ -184,7 +184,7 @@ pre{padding: 1em;}
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:1;text-align:left;color:grey;">Eikon Tecnologia Ltda. - 01234-001 - Av. Pacaembu 1777 - São Paulo SP - Brasil</div>
+                      <div style="font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:1;text-align:left;color:grey;"><%= gettext "Company name - Company address"%></div>
                     </td>
                   </tr>
                 </table>

@@ -346,4 +346,9 @@ defmodule HelloWorld.Accounts do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
+
+  def query_accounts_not_confirmed_in_two_hours() do
+    now_less_two_hours = NaiveDateTime.add(NaiveDateTime.utc_now(), -7_200)
+    from u in User, where: is_nil(u.confirmed_at) and u.inserted_at <= ^now_less_two_hours
+  end
 end
