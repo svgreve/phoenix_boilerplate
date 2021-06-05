@@ -258,7 +258,7 @@ msgstr "não é válido"
 #, elixir-format
 #: lib/hello_world_web/controllers/user_registration_controller.ex:27
 msgid "Account created successfully. You will receive an email to confirm your account."
-msgstr "Conta criada com sucesso. Você receberá um e-mail para confirmar sua nova  conta."
+msgstr "Conta aberta com sucesso. Você receberá um e-mail para confirmar sua nova  conta."
 
 #, elixir-format
 #: lib/hello_world_web/templates/layout/email.html.eex:187
