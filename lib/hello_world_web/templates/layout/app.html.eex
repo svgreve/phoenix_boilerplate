@@ -26,11 +26,29 @@
 
     </header>
 
+    <div class="container-dark-mode">
+   <div class="sun sun-logo">
+     <%= icon_tag(@conn, "active") %>
+   </div>
+   <div class="moon moon-logo">
+     <%= icon_tag(@conn, "right-arrow") %>
+   </div>
+</div>
+
+
+
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-         <%= icon_tag(@conn, "active") %>
       <%= @inner_content %>
     </main>
+
+    <script>
+document.querySelector(".container-dark-mode").addEventListener("click", () => {
+    document.querySelector(".sun-logo").classList.toggle("animate-sun");
+    document.querySelector(".moon-logo").classList.toggle("animate-moon");
+    document.querySelector("body").classList.toggle("dark");
+})
+</script>
   </body>
 </html>

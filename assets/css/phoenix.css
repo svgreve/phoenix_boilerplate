@@ -28,9 +28,54 @@ select {
   width: auto;
 }
 
+body{
+  transition: background-color 1s;
+}
+.dark{
+  background-color: black;
+}
+
 .icon {
   fill: black;
-  color: black
+  width: 4.0rem; 
+}
+
+.container-dark-mode{
+  position: relative;
+}
+
+.sun, .moon{
+  font-size: 10rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.moon{
+  position: absolute;
+  inset: 0;
+}
+
+..moon-logo{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+.sun-logo{
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
+}
+
+.animate-sun{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+  color: aliceblue;
+}
+
+.animate-moon{
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+  color: aliceblue;
 }
 
 /* Phoenix promo and logo */
