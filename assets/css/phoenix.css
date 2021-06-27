@@ -28,6 +28,11 @@ select {
   width: auto;
 }
 
+.icon {
+  fill: black;
+  color: black
+}
+
 /* Phoenix promo and logo */
 .phx-hero {
   text-align: center;
