@@ -1,3 +1,12 @@
+<section>
+  <div class="container-dark-mode">
+   <div class="sun sun-logo">
+     <%= icon_tag(@conn, "sun") %>
+   </div>
+   <div class="moon moon-logo">
+     <%= icon_tag(@conn, "moon") %>
+   </div>
+</section>
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "HelloWorld" %></h1>
   <p><%= gettext "Peace of mind from prototype to production" %></p>

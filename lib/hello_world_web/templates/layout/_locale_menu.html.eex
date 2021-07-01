@@ -1,3 +1,4 @@
+
   <ul>
     <%= if @current_locale != "en" do %>
       <li> <%= link "English", to: "/?locale=en" %> </li>

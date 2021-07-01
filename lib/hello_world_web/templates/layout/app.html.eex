@@ -11,9 +11,12 @@
   <body>
     <header>
 
+
       <section class="container">
 
+
         <nav role="navigation">
+
           <%= render "_locale_menu.html", assigns %>
           <%= render "_user_menu.html", assigns %>
         </nav>
@@ -26,18 +29,16 @@
 
     </header>
 
-    <div class="container-dark-mode">
-   <div class="sun sun-logo">
-     <%= icon_tag(@conn, "active") %>
-   </div>
-   <div class="moon moon-logo">
-     <%= icon_tag(@conn, "right-arrow") %>
-   </div>
+
+
+
 </div>
 
 
 
     <main role="main" class="container">
+
+
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= @inner_content %>
@@ -48,6 +49,8 @@ document.querySelector(".container-dark-mode").addEventListener("click", () => {
     document.querySelector(".sun-logo").classList.toggle("animate-sun");
     document.querySelector(".moon-logo").classList.toggle("animate-moon");
     document.querySelector("body").classList.toggle("dark");
+    document.querySelector("header").classList.toggle("dark");
+    document.querySelector("a").classList.toggle("dark");
 })
 </script>
   </body>
