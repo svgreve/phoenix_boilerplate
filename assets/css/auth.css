@@ -10,30 +10,5 @@ form[action='/users/settings'],
 div.reset-password
 {
   @apply bg-white px-10 py-8 mb-6 shadow rounded-lg dark:bg-gray-600;
-
   @apply px-6 mt-8 mx-auto w-full max-w-md;
-
-  label {
-    @apply block mt-3 mb-1 text-sm font-medium text-gray-600;
-  }
- 
-  button {
-    @apply mt-6 w-full py-2 px-4 
-    border border-transparent text-sm font-medium 
-    rounded-md 
-    text-white bg-indigo-600 
-    transition duration-150 ease-in-out;
-  }
-
-  button:focus {
-    @apply outline-none border-indigo-700 ring ring-indigo-300;
-  }
-
-  button:active {
-    @apply bg-indigo-700;
-  }
-
-  button:hover {
-    @apply bg-indigo-500;
-  }
 } 

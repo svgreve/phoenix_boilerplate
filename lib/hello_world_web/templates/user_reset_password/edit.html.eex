@@ -1,3 +1,4 @@
+<div class="auth">
 <h1><%= gettext "Reset password" %></h1>
 
 <%= form_for @changeset, Routes.user_reset_password_path(@conn, :update, @token), fn f -> %>
@@ -6,7 +7,7 @@
       <p><%= gettext "Oops, something went wrong! Please check the errors below."%></p>
     </div>
   <% end %>
-
+<div class="reset-password">
   <%= label f, :password, gettext "New password" %>
   <%= password_input f, :password, required: true%>
   <%= error_tag f, :password %>
@@ -18,9 +19,11 @@
   <div>
     <%= submit gettext "Reset password" %>
   </div>
+  </div>
 <% end %>
 
 <p>
   <%= link(gettext("Register"), to: Routes.user_registration_path(@conn, :new)) %> |
   <%= link(gettext("Log in"), to: Routes.user_session_path(@conn, :new)) %>
 </p>
+</div>
