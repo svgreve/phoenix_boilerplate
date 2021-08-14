@@ -3,3 +3,52 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import './auth.css';
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-7xl p-8 relative;
+    }
+    .phx-hero {
+        @apply bg-gray-50 text-center 
+        border-gray-50 border-solid border-4 rounded-lg p-8 
+        font-extralight text-2xl;
+    }
+    .phx-logo {
+        @apply min-w-full m-4 block;
+      }
+    .phx-logo img {
+        @apply h-8 block;
+    }
+    header {
+        @apply max-w-full bg-gray-100 border-red-600 border-b-2;
+    }
+    header section {
+        @apply flex-auto flex-shrink-0 items-end justify-between;
+    }
+    // header section :first-child {
+    //     @apply order-1rem;
+    // }
+    // header section :last-child {
+    //     @apply order-2;
+    // }
+    header nav ul, header nav li {
+        @apply m-0 p-0 block text-right whitespace-nowrap;
+    }
+    header nav ul {
+        @apply  mt-0;
+    }
+    header nav a {
+        @apply block;
+    }
+    h1 {
+        @apply text-red-400 font-bold font-sans text-5xl leading-tight m-8;
+    }
+    p {
+        @apply font-mono text-lg tracking-normal leading-tight m-4;
+    }
+    a {
+        @apply text-red-500 hover:underline;
+    }
+}
