@@ -4,35 +4,66 @@
 
 @tailwind utilities;
 
-@import './auth.css';
+
+
+@layer base {
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply w-full border-gray-300 rounded-lg shadow-sm
+        focus:border-indigo-500 focus:ring-indigo-500
+        dark:bg-gray-300 dark:text-black;
+    }
+    [type='checkbox'],
+    [type='radio'] {
+        @apply rounded border-gray-300 text-indigo-600
+        focus:border-indigo-500
+    }
+}
+
 
 @layer components {
+    body {
+        @apply bg-gray-50 dark:bg-gray-800 dark:text-gray-50;
+    }
     .container {
-        @apply mx-auto max-w-7xl p-8 relative;
+        @apply max-w-6xl mx-auto px-6 justify-center;
     }
     .phx-hero {
-        @apply bg-gray-50 text-center 
-        border-gray-50 border-solid border-4 rounded-lg p-8 
-        font-extralight text-2xl;
+        @apply text-center 
+        dark:bg-gray-800 bg-gray-200 
+        rounded-xl 
+        py-8 px-4 mt-0 mb-4 
+        text-black dark:text-white;
     }
     .phx-logo {
         @apply min-w-full m-4 block;
       }
     .phx-logo img {
-        @apply h-8 block;
+        @apply h-12 block dark:bg-gray-400 p-1;
     }
     header {
-        @apply max-w-full bg-gray-100 border-red-600 border-b-2;
+        body {
+          @apply antialiased relative bg-gray-200 font-sans;
+        }
+      
+        @apply pb-4 mb-8 border-solid border-b border-red-500;
     }
     header section {
         @apply flex-auto flex-shrink-0 items-end justify-between;
     }
-    // header section :first-child {
-    //     @apply order-1rem;
-    // }
-    // header section :last-child {
-    //     @apply order-2;
-    // }
     header nav ul, header nav li {
         @apply m-0 p-0 block text-right whitespace-nowrap;
     }
@@ -43,12 +74,40 @@
         @apply block;
     }
     h1 {
-        @apply text-red-400 font-bold font-sans text-5xl leading-tight m-8;
+        @apply text-center text-red-600 dark:text-white font-extrabold text-4xl mb-8;
     }
+      
     p {
-        @apply font-mono text-lg tracking-normal leading-tight m-4;
+        @apply text-center text-gray-900 dark:text-yellow-100 font-bold text-xl mb-6;
     }
+
     a {
         @apply text-red-500 hover:underline;
     }
+
+    label {
+        @apply block mt-3 mb-1 text-sm font-medium text-gray-600 dark:text-gray-50;
+    }
+
+    button {
+        @apply mt-6 w-full py-2 px-4 
+        border border-transparent text-sm font-medium 
+        rounded-md 
+        text-white bg-indigo-600 
+        transition duration-150 ease-in-out;
+    }
+
+    button:focus {
+        @apply outline-none border-indigo-700 ring ring-indigo-300;
+    }
+    
+    button:active {
+        @apply bg-indigo-700;
+    }
+    
+    button:hover {
+        @apply bg-indigo-500;
+    }
 }
+
+@import './auth.css';
