@@ -53,8 +53,11 @@
     .phx-logo img {
         @apply h-12 block dark:bg-gray-400 p-1;
     }
-    .phx-icon img {
-        @apply h-6 p-0 self-end bg-yellow-50;
+    .phx-mode {
+        @apply flex flex-row min-w-full m-1 block justify-end;
+    }
+    .phx-mode img {
+        @apply h-8 block dark:bg-gray-400 p-1;
     }
     header {
         body {
