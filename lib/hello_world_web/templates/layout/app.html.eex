@@ -18,6 +18,7 @@
         </a>
 
         <nav role="navigation">
+          <%= render "_mode_menu.html", assigns %>
           <%= render "_locale_menu.html", assigns %>
           <%= render "_user_menu.html", assigns %>
         </nav>

@@ -11,12 +11,14 @@
   <body>
     <header>
       <section class="container">
-        <nav role="navigation">
-          <%= render "_user_menu.html", assigns %>
-        </nav>
-        <a href="/home" class="phx-logo">
+         <a href="/home" class="phx-logo">
           <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
         </a>
+        <nav role="navigation">
+          <%= render "_mode_menu.html", assigns %>
+          <%= render "_locale_menu.html", assigns %>
+          <%= render "_user_menu.html", assigns %>
+        </nav>
       </section>
     </header>
     <main role="main" class="container">
