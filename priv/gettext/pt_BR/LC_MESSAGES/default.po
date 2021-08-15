@@ -25,9 +25,9 @@ msgstr "Tranquilidade do protótipo à produção"
 
 #, elixir-format
 #: lib/hello_world_web/templates/layout/_user_menu.html.eex:7
-#: lib/hello_world_web/templates/user_confirmation/new.html.eex:11 lib/hello_world_web/templates/user_registration/new.html.eex:24
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:25 lib/hello_world_web/templates/user_reset_password/new.html.eex:14
-#: lib/hello_world_web/templates/user_session/new.html.eex:1 lib/hello_world_web/templates/user_session/new.html.eex:20
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:12 lib/hello_world_web/templates/user_registration/new.html.eex:26
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:27 lib/hello_world_web/templates/user_reset_password/new.html.eex:15
+#: lib/hello_world_web/templates/user_session/new.html.eex:2 lib/hello_world_web/templates/user_session/new.html.eex:21
 msgid "Log in"
 msgstr "Acessar conta"
 
@@ -38,15 +38,15 @@ msgstr "Sair da conta"
 
 #, elixir-format
 #: lib/hello_world_web/templates/layout/_user_menu.html.eex:6
-#: lib/hello_world_web/templates/user_confirmation/new.html.eex:10 lib/hello_world_web/templates/user_registration/new.html.eex:1
-#: lib/hello_world_web/templates/user_registration/new.html.eex:19 lib/hello_world_web/templates/user_reset_password/edit.html.eex:24
-#: lib/hello_world_web/templates/user_reset_password/new.html.eex:13 lib/hello_world_web/templates/user_session/new.html.eex:25
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:11 lib/hello_world_web/templates/user_registration/new.html.eex:2
+#: lib/hello_world_web/templates/user_registration/new.html.eex:20 lib/hello_world_web/templates/user_reset_password/edit.html.eex:26
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:14 lib/hello_world_web/templates/user_session/new.html.eex:26
 msgid "Register"
 msgstr "Abrir conta"
 
 #, elixir-format
 #: lib/hello_world_web/templates/layout/_user_menu.html.eex:3
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:1
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:2
 msgid "Settings"
 msgstr "Configurações"
 
@@ -61,20 +61,20 @@ msgid "A link to confirm your email change has been sent to the new address."
 msgstr "Um link para confirmar a alteração do seu e-mail foi enviado para o novo endereço."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:3
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:23
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:5
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:24
 msgid "Change email"
 msgstr "Alterar meu e-mail"
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:27
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:51
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:28
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:52
 msgid "Change password"
 msgstr "Alterar minha senha"
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:14
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:42
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:15
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:43
 msgid "Confirm new password"
 msgstr "Confirme a nova senha"
 
@@ -89,8 +89,8 @@ msgid "Email changed successfully."
 msgstr "Email alterado com sucesso."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_registration/new.html.eex:25
-#: lib/hello_world_web/templates/user_reset_password/new.html.eex:1 lib/hello_world_web/templates/user_session/new.html.eex:26
+#: lib/hello_world_web/templates/user_registration/new.html.eex:27
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:2 lib/hello_world_web/templates/user_session/new.html.eex:27
 msgid "Forgot your password?"
 msgstr "Esqueceu sua senha?"
 
@@ -105,7 +105,7 @@ msgid "If your email is in our system, you will receive instructions to reset yo
 msgstr "Se seu e-mail estiver em nosso sistema, você receberá instruções para redefinir sua senha em breve."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_session/new.html.eex:16
+#: lib/hello_world_web/templates/user_session/new.html.eex:17
 msgid "Keep me logged in for 60 days"
 msgstr "Mantenha-me conectado por 60 dias"
 
@@ -115,15 +115,15 @@ msgid "Logged out successfully."
 msgstr "Desconectado com sucesso."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:10
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:38
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:11
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:39
 msgid "New password"
 msgstr "Nova senha"
 
 #, elixir-format
 #: lib/hello_world_web/templates/user_registration/new.html.eex:6
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:6 lib/hello_world_web/templates/user_settings/edit.html.eex:8
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:32
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:7 lib/hello_world_web/templates/user_settings/edit.html.eex:9
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:33
 msgid "Oops, something went wrong! Please check the errors below."
 msgstr "Ops, algo deu errado! Verifique os erros abaixo."
 
@@ -138,13 +138,13 @@ msgid "Password updated successfully."
 msgstr "Senha redefinida com sucesso."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_confirmation/new.html.eex:6
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:7
 msgid "Resend confirmation instructions"
 msgstr "Reenviar instruções de confirmação"
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:1
-#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:19
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:2
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:20
 msgid "Reset password"
 msgstr "Redefinir senha"
 
@@ -154,7 +154,7 @@ msgid "Reset password link is invalid or it has expired."
 msgstr "O link de redefinição de senha é inválido ou expirou."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_reset_password/new.html.eex:8
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:9
 msgid "Send instructions to reset password"
 msgstr "Envie instruções para redefinir a senha"
 
@@ -174,14 +174,14 @@ msgid "you will receive an email with instructions shortly."
 msgstr "você receberá um e-mail com instruções em breve."
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_registration/new.html.eex:14
-#: lib/hello_world_web/templates/user_session/new.html.eex:13
+#: lib/hello_world_web/templates/user_registration/new.html.eex:15
+#: lib/hello_world_web/templates/user_session/new.html.eex:14
 msgid "Password"
 msgstr "Senha"
 
 #, elixir-format
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:18
-#: lib/hello_world_web/templates/user_settings/edit.html.eex:46
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:19
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:47
 msgid "Current password"
 msgstr "Senha atual"
 
@@ -274,3 +274,13 @@ msgstr "Email ou senha inválidos ou conta não confirmada"
 #: lib/hello_world_web/templates/home/index.html.eex:1
 msgid "Signed-in home page"
 msgstr "Página inicial de usuário conectado"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:3
+msgid "Dark mode"
+msgstr "Modo escuro"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:6
+msgid "Light mode"
+msgstr "Modo claro"

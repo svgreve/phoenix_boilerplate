@@ -273,3 +273,13 @@ msgstr ""
 #: lib/hello_world_web/templates/home/index.html.eex:1
 msgid "Signed-in home page"
 msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:3
+msgid "Dark mode"
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:6
+msgid "Light mode"
+msgstr ""

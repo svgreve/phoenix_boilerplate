@@ -1,8 +1,12 @@
   <ul>
     <%= if @current_mode == "light" do %>
-      <li> <%= link "Dark mode", to: "/?mode=dark" %> </li>
+      <li>
+      <a href="/?mode=dark" class="phx-icon">
+         <img src="<%= Routes.static_path(@conn, "/images/moon.svg") %>" alt="Phoenix Framework Logo"/>
+        </a>
+      </li>
     <% end %>
     <%= if @current_mode == "dark" do %>
-      <li><%=  link "Light mode", to: "/?mode=light" %> </li>
+      <li><%=  link gettext("Light mode"), to: "/?mode=light" %> </li>
     <% end %>
   </ul>
