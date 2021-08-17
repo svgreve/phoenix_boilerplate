@@ -1,0 +1,286 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: es\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/email_old.html.eex:51
+#: lib/hello_world_web/templates/page/index.html.eex:2
+msgid "Welcome to %{name}!"
+msgstr "Bienvenido a %{name}"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/email.html.eex:156
+#: lib/hello_world_web/templates/layout/email_old.html.eex:52 lib/hello_world_web/templates/page/index.html.eex:3
+msgid "Peace of mind from prototype to production"
+msgstr "Tranquilidad desde el prototipo hasta la producción"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:7
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:12 lib/hello_world_web/templates/user_registration/new.html.eex:26
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:27 lib/hello_world_web/templates/user_reset_password/new.html.eex:15
+#: lib/hello_world_web/templates/user_session/new.html.eex:2 lib/hello_world_web/templates/user_session/new.html.eex:21
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:4
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:6
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:11 lib/hello_world_web/templates/user_registration/new.html.eex:2
+#: lib/hello_world_web/templates/user_registration/new.html.eex:20 lib/hello_world_web/templates/user_reset_password/edit.html.eex:26
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:14 lib/hello_world_web/templates/user_session/new.html.eex:26
+msgid "Register"
+msgstr "Registrarse"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:3
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:2
+msgid "Settings"
+msgstr "Ajustes"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_auth.ex:17
+msgid "You must log in to access this page."
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_settings_controller.ex:30
+msgid "A link to confirm your email change has been sent to the new address."
+msgstr "Usted debe ingresar para acceder a esta página."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:5
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:24
+msgid "Change email"
+msgstr "Cambiar e-mail"
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:28
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:52
+msgid "Change password"
+msgstr "Cambiar la contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:15
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:43
+msgid "Confirm new password"
+msgstr "Confirmar nueva contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_settings_controller.ex:64
+msgid "Email change link is invalid or it has expired."
+msgstr "El link de cambio de correo electrónico no es válido o ha caducado."
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_settings_controller.ex:59
+msgid "Email changed successfully."
+msgstr "El correo electrónico cambió correctamente."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_registration/new.html.eex:27
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:2 lib/hello_world_web/templates/user_session/new.html.eex:27
+msgid "Forgot your password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_confirmation_controller.ex:24
+msgid "If your email is in our system and it has not been confirmed yet, "
+msgstr "¿Olvidaste tu contraseña?"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_reset_password_controller.ex:26
+msgid "If your email is in our system, you will receive instructions to reset your password shortly."
+msgstr "Si su correo electrónico está en nuestro sistema, recibirá instrucciones para restablecer su contraseña en breve."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_session/new.html.eex:17
+msgid "Keep me logged in for 60 days"
+msgstr "Mantenerme conectado durante 60 días"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_session_controller.ex:27
+msgid "Logged out successfully."
+msgstr "Se desconectó correctamente."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:11
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:39
+msgid "New password"
+msgstr "Nueva contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_registration/new.html.eex:6
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:7 lib/hello_world_web/templates/user_settings/edit.html.eex:9
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:33
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "¡Huy! Algo salió mal! Compruebe los errores a continuación."
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_reset_password_controller.ex:43
+msgid "Password reset successfully."
+msgstr "Contraseña restablecida correctamente."
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_settings_controller.ex:46
+msgid "Password updated successfully."
+msgstr "Contraseña actualizada exitosamente."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_confirmation/new.html.eex:7
+msgid "Resend confirmation instructions"
+msgstr "Reenviar instrucciones de confirmación"
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:2
+#: lib/hello_world_web/templates/user_reset_password/edit.html.eex:20
+msgid "Reset password"
+msgstr "Restablecer la contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_reset_password_controller.ex:58
+msgid "Reset password link is invalid or it has expired."
+msgstr "El link para restablecer la contraseña no es válido o ha caducado."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_reset_password/new.html.eex:9
+msgid "Send instructions to reset password"
+msgstr "Enviar instrucciones para restablecer la contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_confirmation_controller.ex:50
+msgid "User confirmation link is invalid or it has expired."
+msgstr "El link de confirmación del usuario no es válido o ha caducado."
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_confirmation_controller.ex:36
+msgid "User confirmed successfully."
+msgstr "Usuario confirmado con éxito."
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_confirmation_controller.ex:25
+msgid "you will receive an email with instructions shortly."
+msgstr "recibirá un correo electrónico con instrucciones en breve."
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_registration/new.html.eex:15
+#: lib/hello_world_web/templates/user_session/new.html.eex:14
+msgid "Password"
+msgstr "Contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:19
+#: lib/hello_world_web/templates/user_settings/edit.html.eex:47
+msgid "Current password"
+msgstr "Contraseña actual"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:45
+msgid "must have the @ sign and no spaces"
+msgstr "debe tener el signo @ y sin espacios"
+
+#, elixir-format
+#: lib/hello_world/accounts/email.ex:30
+#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:3
+msgid "Confirm your account"
+msgstr "Confirme su cuenta"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:1 lib/hello_world_web/templates/email/reset_password_instructions.html.eex:1
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:1
+msgid "Hi, %{email}"
+msgstr "Hola, %{email}"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:4
+msgid "If you didn't create an account with us, please ignore this."
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/registration_email_confirmation.html.eex:2
+msgid "You can confirm your account by clicking on the button below:"
+msgstr "Si no creó una cuenta con nosotros, ignore esto."
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:4
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:4
+msgid "If you didn't request this change, please ignore this."
+msgstr "Si no solicitó este cambio, ignórelo."
+
+#, elixir-format
+#: lib/hello_world/accounts/email.ex:40
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:3
+msgid "Reset your password"
+msgstr "Restablecer su contraseña"
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/reset_password_instructions.html.eex:2
+msgid "You can reset your password by clicking the button below"
+msgstr "Puede restablecer su contraseña haciendo clic en el botón de abajo"
+
+#, elixir-format
+#: lib/hello_world/accounts/email.ex:50
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:3
+msgid "Confirm your new email"
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/email/update_email_instructions.html.eex:2
+msgid "You can change your email by clicking the button below:"
+msgstr "Puede cambiar su correo electrónico haciendo clic en el botón a continuación:"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:87
+msgid "did not change"
+msgstr "no cambio"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:106
+msgid "does not match password"
+msgstr "no coincide con la contraseña"
+
+#, elixir-format
+#: lib/hello_world/accounts/user.ex:141
+msgid "is not valid"
+msgstr "No es válido"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_registration_controller.ex:27
+msgid "Account created successfully. You will receive an email to confirm your account."
+msgstr "Cuenta creada con éxito. Recibirás un correo electrónico para confirmar tu cuenta."
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/email.html.eex:187
+msgid "Company name - Company address"
+msgstr "Nombre de la empresa - Dirección de la empresa"
+
+#, elixir-format
+#: lib/hello_world_web/controllers/user_session_controller.ex:20
+msgid "Invalid email or password or account not confirmed"
+msgstr "Correo electrónico o contraseña no válidos o cuenta no confirmada"
+
+#, elixir-format
+#: lib/hello_world_web/templates/home/index.html.eex:1
+msgid "Signed-in home page"
+msgstr "Página de inicio con sesión iniciada"
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:3
+msgid "Dark mode"
+msgstr ""
+
+#, elixir-format
+#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:6
+msgid "Light mode"
+msgstr ""

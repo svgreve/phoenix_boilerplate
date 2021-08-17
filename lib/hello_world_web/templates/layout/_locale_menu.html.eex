@@ -1,20 +1,30 @@
-<ul>
-   <%= if @current_locale == "en" do %>
-   <li>
+    <p> <%= @current_locale %></p>
+
+   <%= if @current_locale == "pt_BR" do %>
+      <a href="/?locale=en" class="phx-mode">
+         <img  src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="English"/>
+        </a>
+     <a href="/?locale=es" class="phx-mode">
+         <img src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
+        </a>
+    <% end %>
+
+  <%= if @current_locale == "en" do %>
+
+      <a href="/?locale=pt_BR" class="phx-mode">
+         <img src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português do Brasil"/>
+        </a>
+      <a href="/?locale=es" class="phx-mode">
+         <img src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
+        </a>
+    <% end %>
+
+   <%= if @current_locale == "es" do %>
       <a href="/?locale=pt_BR" class="phx-mode">
          <img src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português do Brasil"/>
         </a>
 
-      <a href="/?locale=es" class="phx-mode">
-         <img src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
-        </a>
-    </li>
-    <% end %>
-    <%= if @current_locale == "pt-BR" do %>
-    <li>
       <a href="/?locale=en" class="phx-mode">
-         <img  src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="English"/>
+         <img src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="Español"/>
         </a>
-    </li>
     <% end %>
-</ul>

@@ -11,7 +11,7 @@
   <body>
     <header>
       <section class="container">
-        <%= render "_mode_menu.html", assigns %>
+        <%= render "_locale_menu.html", assigns %>
 
 
 
