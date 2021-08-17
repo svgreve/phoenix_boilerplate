@@ -1,0 +1,16 @@
+  <ul>
+    <%= if @current_locale != "en" do %>
+    <li>
+      <a href="/?locale=en" class="phx-mode">
+         <img src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="English"/>
+        </a>
+    </li>
+    <% end %>
+    <%= if @current_locale != "pt_BR" do %>
+   <li>
+      <a href="/?locale=pt_BR" class="phx-mode">
+         <img src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português"/>
+        </a>
+    </li>
+    <% end %>
+  </ul>

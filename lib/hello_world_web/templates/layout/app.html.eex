@@ -13,10 +13,10 @@
 
       <section class="container">
        <nav role="navigation">
-        <%= render "_mode_menu.html", assigns %>
+        <%= render "_locale_menu.html", assigns %>
       </nav>
         <a href="/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+          <img src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="Phoenix Framework Logo"/>
         </a>
 
         <nav role="navigation">
