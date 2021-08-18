@@ -15,18 +15,19 @@
 
   <section class="inline-flex items-center w-full">
 
-  <div class="bg-yellow-400 w-2/6">
-   <span class="phx-logo"> <a href="/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="Phoenix Framework Logo"/>
-        </a>
+  <div class="w-auto">
+   <span class="phx-logo">
+     <a href="/" class="phx-logo">
+        <img src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="Phoenix Framework Logo"/>
+     </a>
     </span>
   </div>
 
-<div class="flex w-full">
-<div class="bg-yellow-400 w-full flex justify-center">
- <span class="p-1">Item 2</span>
-  <span class="p-1">Item 3</span>
-  </div>
+<div class="inline-flex w-full justify-center">
+
+ <span class="p-1">item 1</span>
+ <span class="p-1">item 2</span>
+
 </div>
 
 

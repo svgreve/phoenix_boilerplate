@@ -1,4 +1,4 @@
-<div class="contatiner mx-auto"></div>
+
    <%= if @current_locale == "pt_BR" do %>
       <div class="order-1"><a href="/?locale=en">
          <img  class="h-8 p-1 rounded-full" src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="English"/>
@@ -10,10 +10,10 @@
 
   <%= if @current_locale == "en" do %>
 
-      <a href="/?locale=pt_BR" class="phx-locale">
+      <a href="/?locale=pt_BR" class="h-8 p-1 rounded-full">
          <img src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português do Brasil"/>
         </a>
-      <a href="/?locale=es" class="phx-locale">
+      <a href="/?locale=es" class="h-8 p-1 rounded-full">
          <img src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
         </a>
     <% end %>
@@ -27,4 +27,3 @@
          <img src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="Español"/>
         </a>
     <% end %>
-</div>
