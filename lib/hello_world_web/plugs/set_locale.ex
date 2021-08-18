@@ -24,7 +24,6 @@ defmodule HelloWorldWeb.Plugs.SetLocale do
         conn |> assign(:current_locale, "en")
 
       locale ->
-        IO.puts "------------------- #{locale} ----------"
         HelloWorldWeb.Gettext |> Gettext.put_locale(locale)
         conn |> put_resp_cookie("locale", locale, max_age: 365 * 24 * 60 * 60)
         conn |> assign(:current_locale, locale)

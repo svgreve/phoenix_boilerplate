@@ -48,16 +48,19 @@
         text-black dark:text-gray-50;
     }
     .phx-logo {
-        @apply min-w-full m-4 block;
+        @apply bg-yellow-100;
       }
     .phx-logo img {
-        @apply h-12 block dark:bg-gray-400 p-1;
+        @apply h-12  dark:bg-gray-400 p-1;
     }
-    .phx-mode {
-        @apply flex flex-row min-w-full m-1 block justify-end;
+    .menu-locale {
+        @apply flex min-w-full m-1 block justify-end;
     }
-    .phx-mode img {
-        @apply h-8 block dark:bg-gray-400 p-1;
+    .phx-locale {
+        @apply flex min-w-full m-1 block;
+    }
+    .img-locale{
+        @apply h-8 p-1 rounded-full;
     }
     header {
         body {
