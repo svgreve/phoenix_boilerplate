@@ -62,16 +62,16 @@
     .img-locale{
         @apply h-8 p-1 rounded-full;
     }
-    header {
-        body {
-          @apply antialiased relative bg-gray-200 font-sans;
-        }
+    // header {
+    //     body {
+    //       @apply antialiased relative bg-gray-200 font-sans;
+    //     }
       
-        @apply pb-4 mb-8 border-solid border-b border-red-500;
-    }
-    header section {
-        @apply flex-auto flex-shrink-0 items-end justify-between;
-    }
+    //     @apply pb-4 mb-8 border-solid border-b border-red-500;
+    // }
+    // header section {
+    //     @apply flex-auto flex-shrink-0 items-end justify-between;
+    // }
     header nav ul, header nav li {
         @apply m-0 p-0 block text-right whitespace-nowrap;
     }

@@ -10,18 +10,23 @@
   </head>
   <body>
   <header class="container">
-  <section class="inline-flex items-center">
 
-  <div>
+
+
+  <section class="inline-flex items-center w-full">
+
+  <div class="bg-yellow-400 w-2/6">
    <span class="phx-logo"> <a href="/" class="phx-logo">
           <img src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="Phoenix Framework Logo"/>
         </a>
     </span>
   </div>
 
-<div class="bg-yellow-400">
- <span class="p-2">Item 2</span>
-    <span class="p-2">Item 3</span>
+<div class="flex w-full">
+<div class="bg-yellow-400 w-full flex justify-center">
+ <span class="p-1">Item 2</span>
+  <span class="p-1">Item 3</span>
+  </div>
 </div>
 
 
