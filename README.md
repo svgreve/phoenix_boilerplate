@@ -45,3 +45,9 @@ Include translations in newly updated files in ```priv/getext``` folder
 To add a new language (eg Spanish), run the command:
 
 ```mix gettext.merge priv/gettext --locale es```
+
+<a href="https://iconscout.com/icons/brazil" target="_blank">Brazil Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">Iconscout Store</a>
+
+<a href="https://iconscout.com/icons/spain" target="_blank">Spain Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">Iconscout Store</a>
+
+<a href="https://iconscout.com/icons/united" target="_blank">United Kingdom Icon</a> by <a href="https://iconscout.com/contributors/iconscout">Iconscout Store</a>

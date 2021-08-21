@@ -9,16 +9,20 @@
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <%= render "_user_menu.html", assigns %>
-        </nav>
-        <a href="/home" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+<header class="container">
+  <section class="flex flex-row justify-between items-center">
+     <div class="bg-red-100">
+        <a href="/">
+          <img class="img-logo" src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="HelloWorld Logo"/>
         </a>
-      </section>
-    </header>
+     </div>
+     <%= render "_locale_menu.html", assigns %>
+  </section>
+  <section class="flex flex-row justify-end">
+    <%= render "_user_menu.html", assigns %>
+  </section>
+</header>
+
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>

@@ -1,9 +1,12 @@
-<ul>
+
 <%= if @current_user do %>
-  <li><%= link gettext("Settings"), to: Routes.user_settings_path(@conn, :edit)%></li>
-  <li><%= link gettext("Log out"), to: Routes.user_session_path(@conn, :delete), method: :delete %></li>
+ <div class="inline-flex">
+  <div class="menu"><%= link gettext("Settings"), to: Routes.user_settings_path(@conn, :edit)%></div>
+  <div class="menu"><%= link gettext("Log out"), to: Routes.user_session_path(@conn, :delete), method: :delete %></div>
+  </div>
 <% else %>
-  <li><%= link gettext("Register"), to: Routes.user_registration_path(@conn, :new) %></li>
-  <li><%= link gettext("Log in"), to: Routes.user_session_path(@conn, :new)%></li>
+ <div class="inline-flex">
+  <div class="menu"><%= link gettext("Register"), to: Routes.user_registration_path(@conn, :new) %></div>
+  <div class="menu"><%= link gettext("Log in"), to: Routes.user_session_path(@conn, :new)%></div>
+  </div>
 <% end %>
-</ul>
