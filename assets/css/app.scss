@@ -54,6 +54,9 @@
     .img-locale {
         @apply w-8 p-1 rounded-lg;
     }
+    .menu {
+        @apply p-1 text-lg font-semibold;
+    }
   
     h1 {
         @apply text-center text-red-600 dark:text-red-400 font-extrabold text-4xl mb-8;
