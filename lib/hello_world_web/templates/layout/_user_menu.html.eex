@@ -1,12 +1,19 @@
 
 <%= if @current_user do %>
- <div class="inline-flex">
-  <div class="menu"><%= link gettext("Settings"), to: Routes.user_settings_path(@conn, :edit)%></div>
-  <div class="menu"><%= link gettext("Log out"), to: Routes.user_session_path(@conn, :delete), method: :delete %></div>
+ <div class="inline-flex items-center">
+  <div class="menu">
+    <%= link gettext("Settings"), to: Routes.user_settings_path(@conn, :edit)%>
   </div>
+  <div>
+    <%= link gettext("Log out"),
+    to: Routes.user_session_path(@conn, :delete),
+    method: :delete,
+    data: [confirm: gettext("You are going to log out. Are you sure?")]%>
+  </div>
+</div>
 <% else %>
- <div class="inline-flex">
+ <div class="inline-flex items-center">
   <div class="menu"><%= link gettext("Register"), to: Routes.user_registration_path(@conn, :new) %></div>
   <div class="menu"><%= link gettext("Log in"), to: Routes.user_session_path(@conn, :new)%></div>
-  </div>
+ </div>
 <% end %>

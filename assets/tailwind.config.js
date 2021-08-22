@@ -6,7 +6,7 @@ module.exports = {
     '../lib/**/*.eex',
     './js/**/*.js'  
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
   },

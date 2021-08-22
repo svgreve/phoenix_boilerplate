@@ -9,6 +9,6 @@ form[action='/users/confirm'],
 form[action='/users/settings'],
 div.reset-password
 {
-  @apply bg-white px-10 py-8 mb-6 shadow rounded-lg dark:bg-gray-600;
+  @apply bg-white px-10 py-8 mb-6 shadow rounded-lg dark:bg-gray-700;
   @apply px-6 mt-8 mx-auto w-full max-w-md;
 } 
