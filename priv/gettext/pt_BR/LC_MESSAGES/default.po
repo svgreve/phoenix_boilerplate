@@ -24,7 +24,7 @@ msgid "Peace of mind from prototype to production"
 msgstr "Tranquilidade do protótipo à produção"
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/_user_menu.html.eex:7
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:17
 #: lib/hello_world_web/templates/user_confirmation/new.html.eex:12 lib/hello_world_web/templates/user_registration/new.html.eex:26
 #: lib/hello_world_web/templates/user_reset_password/edit.html.eex:27 lib/hello_world_web/templates/user_reset_password/new.html.eex:15
 #: lib/hello_world_web/templates/user_session/new.html.eex:2 lib/hello_world_web/templates/user_session/new.html.eex:21
@@ -32,12 +32,12 @@ msgid "Log in"
 msgstr "Acessar conta"
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/_user_menu.html.eex:4
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:8
 msgid "Log out"
 msgstr "Sair da conta"
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/_user_menu.html.eex:6
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:16
 #: lib/hello_world_web/templates/user_confirmation/new.html.eex:11 lib/hello_world_web/templates/user_registration/new.html.eex:2
 #: lib/hello_world_web/templates/user_registration/new.html.eex:20 lib/hello_world_web/templates/user_reset_password/edit.html.eex:26
 #: lib/hello_world_web/templates/user_reset_password/new.html.eex:14 lib/hello_world_web/templates/user_session/new.html.eex:26
@@ -45,7 +45,7 @@ msgid "Register"
 msgstr "Abrir conta"
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/_user_menu.html.eex:3
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:5
 #: lib/hello_world_web/templates/user_settings/edit.html.eex:2
 msgid "Settings"
 msgstr "Configurações"
@@ -276,11 +276,6 @@ msgid "Signed-in home page"
 msgstr "Página inicial de usuário conectado"
 
 #, elixir-format
-#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:3
-msgid "Dark mode"
-msgstr "Modo escuro"
-
-#, elixir-format
-#: lib/hello_world_web/templates/layout/_mode_menu.html.eex:6
-msgid "Light mode"
-msgstr "Modo claro"
+#: lib/hello_world_web/templates/layout/_user_menu.html.eex:11
+msgid "You are going to log out. Are you sure?"
+msgstr "Você vai se desconectar. Tem certeza?"
