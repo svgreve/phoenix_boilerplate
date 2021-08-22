@@ -1,43 +1,54 @@
-
-   <%= if @current_locale == "pt_BR" do %>
+<%= if @current_locale == "pt_BR" do %>
     <div class="inline-flex">
       <div><a href="/?locale=en">
-         <img  class="img-locale" src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="English"/>
+         <img  class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>"
+         alt="English"/>
         </a></div>
      <div>
       <a href="/?locale=es">
-         <img class="img-locale" src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
+         <img class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/spain.svg") %>"
+         alt="Español"/>
         </a>
       </div>
-   </div>
-    <% end %>
+    </div>
+<% end %>
 
-  <%= if @current_locale == "en" do %>
+<%= if @current_locale == "en" do %>
    <div class="inline-flex">
-   <div>
+    <div>
       <a href="/?locale=pt_BR">
-         <img class="img-locale" src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português do Brasil"/>
+         <img class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>"
+         alt="Português do Brasil"/>
         </a>
         </div>
       <div>
       <a href="/?locale=es">
-         <img  class="img-locale" src="<%= Routes.static_path(@conn, "/images/spain.svg") %>" alt="Español"/>
+         <img  class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/spain.svg") %>"
+         alt="Español"/>
         </a>
       </div>
     </div>
-    <% end %>
+<% end %>
 
-   <%= if @current_locale == "es" do %>
+<%= if @current_locale == "es" do %>
    <div class="inline-flex">
     <div>
       <a href="/?locale=pt_BR" class="phx-locale">
-         <img class="img-locale" src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>" alt="Português do Brasil"/>
+         <img class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/brazil.svg") %>"
+         alt="Português do Brasil"/>
       </a>
-   </div>
+    </div>
     <div>
       <a href="/?locale=en" class="phx-locale">
-         <img class="img-locale" src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>" alt="Español"/>
+         <img class="img-locale"
+         src="<%= Routes.static_path(@conn, "/images/united_kingdom.svg") %>"
+         alt="Español"/>
         </a>
     </div>
    </div>
-    <% end %>
+<% end %>
