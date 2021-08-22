@@ -65,6 +65,10 @@
         @apply text-center text-red-600 dark:text-red-400 font-extrabold text-4xl mb-8;
     }
 
+    .subtitle {
+        @apply tracking-wide text-xl antialiased
+    }
+
     h3 {
         @apply text-left text-red-600 dark:text-white font-extrabold text-2xl mb-6;
     }
