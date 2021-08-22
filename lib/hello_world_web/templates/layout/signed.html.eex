@@ -12,7 +12,7 @@
 <header class="container">
   <section class="flex flex-row justify-between items-center">
      <div class="bg-red-100">
-        <a href="/">
+        <a href="/home">
           <img class="img-logo" src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="HelloWorld Logo"/>
         </a>
      </div>

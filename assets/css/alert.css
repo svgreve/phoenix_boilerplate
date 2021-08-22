@@ -1,0 +1,24 @@
+.alert {
+    @apply rounded-xl mb-4 border-solid border-4 p-2 text-center
+  }
+  .alert-info {
+    @apply bg-blue-100 dark:bg-blue-100 dark:text-blue-800 border-blue-200 dark:border-blue-900
+  }
+  .alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+  }
+  .alert-danger {
+    @apply bg-red-100 dark:bg-red-100 dark:text-red-800 border-red-200 dark:border-red-900
+  }
+  .alert p {
+    margin-bottom: 0;
+  }
+  .alert:empty {
+    display: none;
+  }
+  .invalid-feedback {
+    @apply mb-4 m-2 dark:text-red-400
+  }
+  
