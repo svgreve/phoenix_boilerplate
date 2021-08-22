@@ -8,6 +8,15 @@
 
 [Deployed on Gigalixir](https://witty-advanced-amphibian.gigalixirapp.com/)
 
+## New version
+
+- TailwindCss support
+
+- Dark mode (media controlled)
+
+- Spanish interface
+
+
 ## Motivation
 
 Consolidate the knowledge obtained from the [Rocketseat](https://rocketseat.com.br/) Ignite Elixir study trail and from reading the books Elixir in Action and Programming Phoenix >= 1.4.
@@ -42,9 +51,9 @@ Before making a commit, execute the command in the terminal, to prepare the file
 
 Include translations in newly updated files in ```priv/getext``` folder
 
-To add a new language (eg Spanish), run the command:
+To add a new language (eg French), run the command:
 
-```mix gettext.merge priv/gettext --locale es```
+```mix gettext.merge priv/gettext --locale fr```
 
 <a href="https://iconscout.com/icons/brazil" target="_blank">Brazil Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">Iconscout Store</a>
 

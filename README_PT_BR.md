@@ -6,6 +6,14 @@
 
 [Deployed on Gigalixir](https://witty-advanced-amphibian.gigalixirapp.com/)
 
+## Nova versão
+
+- Suporte para TailwindCss
+
+- Dark mode (media controlled)
+
+- Interface em espanhol
+
 
 # Motivação
 
@@ -41,5 +49,10 @@ Este boilerplate foi inspirado no [elixir_boilerplate desenvolvido pela Mirego](
 3. Incluir as traduções nos arquivos recém-atualizados na pasta ``priv/getext``
 4. Para adicionar um novo idioma (p.ex. espanhol), rodar o comando:
 
-	```mix gettext.merge priv/gettext --locale es```
+	```mix gettext.merge priv/gettext --locale fr```
 
+<a href="https://iconscout.com/icons/brazil" target="_blank">Brazil Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">Iconscout Store</a>
+
+<a href="https://iconscout.com/icons/spain" target="_blank">Spain Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">Iconscout Store</a>
+
+<a href="https://iconscout.com/icons/united" target="_blank">United Kingdom Icon</a> by <a href="https://iconscout.com/contributors/iconscout">Iconscout Store</a>
