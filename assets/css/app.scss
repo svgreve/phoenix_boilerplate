@@ -39,7 +39,7 @@
         @apply mx-auto max-w-7xl p-4
     }
     header {
-        @apply border-b-2 border-solid border-red-400 pb-4 m-2
+        @apply border-b-2 border-solid border-gray-400
     }
     main {
         @apply pt-4 mt-4
@@ -52,13 +52,13 @@
         text-black dark:text-gray-50;
     }
     .img-logo {
-        @apply w-64;
+        @apply md:w-64 w-32 m-2 rounded-lg;
     }
     .img-locale {
         @apply w-8 p-1 rounded-lg;
     }
     .menu {
-        @apply px-2 text-lg font-semibold mr-1;
+        @apply px-2 text-lg font-semibold;
     }
   
     h1 {
