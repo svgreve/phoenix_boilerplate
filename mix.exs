@@ -75,7 +75,8 @@ defmodule HelloWorld.MixProject do
       # Optional, but recommended for SSL validation with :httpc
       {:certifi, "~> 2.4"},
       {:ssl_verify_fun, "~> 1.1"},
-      {:oban, "~> 2.7"}
+      {:oban, "~> 2.7"},
+      {:uuid, "~> 1.1"}
     ]
   end
 

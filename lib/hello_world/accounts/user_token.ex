@@ -1,6 +1,6 @@
 defmodule HelloWorld.Accounts.UserToken do
   @moduledoc false
-  use Ecto.Schema
+  use HelloWorld.Schema
   import Ecto.Query
 
   @hash_algorithm :sha256

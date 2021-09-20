@@ -1,6 +1,6 @@
 defmodule HelloWorld.Accounts.User do
   @moduledoc false
-  use Ecto.Schema
+  use HelloWorld.Schema
   import Ecto.Changeset
   import HelloWorldWeb.Gettext
 

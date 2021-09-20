@@ -37,8 +37,10 @@ defmodule HelloWorld.AccountsTest do
 
   describe "get_user!/1" do
     test "raises if id is invalid" do
+      invalid_id = UUID.uuid4()
+
       assert_raise Ecto.NoResultsError, fn ->
-        Accounts.get_user!(-1)
+        Accounts.get_user!(invalid_id)
       end
     end
 
