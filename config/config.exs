@@ -12,6 +12,9 @@ config :hello_world, HelloWorldWeb.Gettext, locales: ~w(en pt_BR es), default_lo
 config :hello_world,
   ecto_repos: [HelloWorld.Repo]
 
+config :hello_world, HelloWorld.Repo, migration_primary_key: [name: :id, type: :binary_id]
+config :hello_world, HelloWorld.Repo, migration_foreign_key: [column: :id, type: :binary_id]
+
 config :hello_world, HelloWorld.Mailer, adapter: Bamboo.LocalAdapter
 
 # Configures the endpoint
