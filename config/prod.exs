@@ -1,5 +1,12 @@
 use Mix.Config
 
+config :hello_world, HelloWorld.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  pool_size: 2,
+  migration_timestamps: [type: :utc_datetime_usec],
+  migration_lock: nil,
+  queue_target: 5000
+
 # For production, don't forget to configure the url host
 # to something meaningful, Phoenix uses this information
 # when generating URLs.
