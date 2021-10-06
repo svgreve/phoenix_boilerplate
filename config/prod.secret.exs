@@ -14,7 +14,10 @@ database_url =
 config :hello_world, HelloWorld.Repo,
   # ssl: true,
   url: database_url,
-  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "2"),
+  migration_timestamps: [type: :utc_datetime_usec],
+  migration_lock: nil,
+  queue_target: 5000
 
 secret_key_base =
   System.get_env("SECRET_KEY_BASE") ||
